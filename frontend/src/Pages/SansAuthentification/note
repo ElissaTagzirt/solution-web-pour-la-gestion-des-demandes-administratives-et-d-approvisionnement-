@@ -1,0 +1,15 @@
+ else :
+        db_demande = DemandeAdminitionModel(
+        hashed_password       =  bcrypt.hash(demande.hashed_password),
+        typeUser              = False,
+        name                  = demande.name,
+        email                 = demande.email,
+        numeroDeTelephone     = demande.adresse,
+        adresse               = demande.adresse ,
+        dateNaissance         =  demande.dateNaissance 
+            
+        )
+        db.add(db_demande)
+        db.commit()
+        db.refresh(db_demande)
+        return {'message':'La demande a été correctement enregistrée et transmise.'}

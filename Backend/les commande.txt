@@ -1,0 +1,2 @@
+cree un fichier requeremeny : pip freeze > requirements.txt
+desactive le venv :  deactivate

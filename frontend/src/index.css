@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.custom-sidebar {
+  height: 100vh;
+  /* Ajoutez d'autres styles si nécessaire */
+}
